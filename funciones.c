@@ -64,11 +64,11 @@ void listarLibros(struct libro libros[], int contador) {
     }
 
     printf("\nLista de Libros:\n");
-    printf("%-5s %-30s %-20s %-6s %-10s\n", "ID", "Título", "Autor", "Año", "Estado");
+    printf("ID\tTítulo\t\tAutor\t\tAño\tEstado\n");
     printf("--------------------------------------------------------\n");
     
     for (int i = 0; i < contador; i++) {
-        printf("%-5d %-30s %-20s %-6d %-10s\n", 
+        printf("%d\t%s\t\t%s\t\t%d\t%s\n", 
             libros[i].id, 
             libros[i].titulo, 
             libros[i].autor, 
