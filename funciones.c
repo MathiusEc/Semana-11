@@ -38,7 +38,7 @@ void registrarLibro(struct libro libros[], int *contador) {
         }
     } while (!idValido);
 
-    getchar(); // Limpiar buffer
+    fflush(stdin); // Limpiar buffer
     
     printf("Ingrese el título del libro: ");
     leerCadena(nuevoLibro.titulo, 101);
@@ -48,7 +48,7 @@ void registrarLibro(struct libro libros[], int *contador) {
     
     printf("Ingrese el año de publicación: ");
     scanf("%d", &nuevoLibro.anio_publicacion);
-    getchar(); // Limpiar buffer
+    fflush(stdin); // Limpiar buffer
     
     strcpy(nuevoLibro.estado, "Disponible");
 
